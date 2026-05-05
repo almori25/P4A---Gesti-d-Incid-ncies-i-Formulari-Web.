@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERRAFIX - Advanced Maintenance Systems</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="Gemini_Generated_Image_cviiqcviiqcviiqc-removebg-preview.png" alt="TERRAFIX Logo" class="main-logo">
+                <div class="logo-text">
+                    <h1>TERRAFIX</h1>
+                    <p>Advanced Maintenance Systems</p>
+                </div>
+            </div>
+            <div class="business-info">
+                <p>NIF: B-12345678 | Calle fondo de bikini, 25 Barcelona</p>
+                <p>Tel: +34 912 000 000 | contacto@terrafix.systems</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Tarifas</a></li>
+                    <li><a href="#">Quiénes somos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#incidencia" class="btn-nav">Envía tu incidencia</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="incidencia">
+            <h2>Formulario de Incidencia Técnica</h2>
+            <p>Por favor, rellena todos los campos obligatorios para que nuestro equipo especializado pueda ayudarte.</p>
+            
+            <form action="#">
+                
+                <fieldset>
+                    <legend>Datos del Cliente</legend>
+                    <label for="nom">Nombre Completo:</label>
+                    <input type="text" id="nom" name="nom" placeholder="Tu nombre" required>
+
+                    <label for="correu">Correo Electrónico:</label>
+                    <input type="email" id="correu" name="correu" placeholder="ejemplo@correo.com" required>
+
+                    <label for="tel">Teléfono de contacto:</label>
+                    <input type="tel" id="tel" name="tel" placeholder="600 000 000" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Identificación del Equipo</legend>
+                    <label for="marca">Marca / Modelo:</label>
+                    <input type="text" id="marca" name="marca" placeholder="Ej: HP Pavilion / MacBook Air" required>
+
+                    <label for="so">Sistema Operativo:</label>
+                    <select id="so" name="so">
+                        <option value="windows">Windows</option>
+                        <option value="linux">Linux</option>
+                        <option value="macos">macOS</option>
+                    </select>
+
+                    <label>Tipo de equipo:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="sobretaula" name="tipus" value="sobretaula"> <label for="sobretaula" class="inline">Sobremesa</label>
+                        <input type="radio" id="portatil" name="tipus" value="portatil"> <label for="portatil" class="inline">Portátil</label>
+                        <input type="radio" id="servidor" name="tipus" value="servidor"> <label for="servidor" class="inline">Servidor</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Componentes afectados (selección múltiple)</legend>
+                    <div class="checkbox-group">
+                        <div class="check-item"><input type="checkbox" id="disc" name="comp" value="disc"> <label for="disc" class="inline">Disco duro</label></div>
+                        <div class="check-item"><input type="checkbox" id="ram" name="comp" value="ram"> <label for="ram" class="inline">Memoria RAM</label></div>
+                        <div class="check-item"><input type="checkbox" id="cpu" name="comp" value="cpu"> <label for="cpu" class="inline">Procesador (CPU)</label></div>
+                        <div class="check-item"><input type="checkbox" id="gpu" name="comp" value="gpu"> <label for="gpu" class="inline">Tarjeta Gráfica</label></div>
+                        <div class="check-item"><input type="checkbox" id="pantalla" name="comp" value="pantalla"> <label for="pantalla" class="inline">Pantalla / Monitor</label></div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Descripción de la Avería</legend>
+                    <label for="simptomes">Síntomas (¿qué hace el equipo?):</label>
+                    <textarea id="simptomes" rows="4" placeholder="Describe brevemente el fallo..." required></textarea>
+
+                    <label for="beeps">Señales acústicas (beeps) o mensajes de error:</label>
+                    <input type="text" id="beeps" placeholder="Ej: Pantallazo azul o 3 pitidos cortos">
+
+                    <label for="darrera-accio">Última acción realizada antes del error:</label>
+                    <input type="text" id="darrera-accio" placeholder="Ej: Estaba instalando un programa...">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Nivel de Urgencia</legend>
+                    <select name="urgencia">
+                        <option value="baixa">Baja</option>
+                        <option value="mitjana">Media</option>
+                        <option value="alta">Alta (Crítica)</option>
+                    </select>
+                </fieldset>
+
+                <button type="submit" class="btn-submit">Enviar Incidencia a Sistemas</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="social">
+                <p>Conecta con TERRAFIX: 🔗 FB | 🐦 TW | 📸 IG</p>
+            </div>
+            <div class="legal">
+                <a href="#">Política de Privacidad</a> | <a href="#">Aviso Legal</a>
+            </div>
+            <div class="horari">
+                <p><strong>Atención prioritaria:</strong> Lunes a Viernes, 09:00 - 18:00</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
