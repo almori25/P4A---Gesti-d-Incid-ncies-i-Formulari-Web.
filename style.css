@@ -1,0 +1,181 @@
+body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #cbd5e1;
+    background-color: #020617; /* Fondo oscuro futurista */
+}
+
+/* Cabecera */
+header {
+    background: #0b111e;
+    color: #fff;
+    padding: 20px 0;
+    border-bottom: 4px solid #10b981; /* Borde verde esmeralda */
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+}
+
+.header-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.main-logo {
+    height: 80px;
+    width: auto;
+}
+
+.logo-text h1 { 
+    margin: 0; 
+    color: #10b981; 
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.logo-text p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+}
+
+.business-info {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    text-align: center;
+}
+
+nav ul { list-style: none; padding: 0; display: flex; align-items: center; }
+nav ul li { margin-left: 20px; }
+nav a { color: #f8fafc; text-decoration: none; font-weight: bold; transition: 0.3s; }
+nav a:hover { color: #10b981; }
+
+.btn-nav {
+    background: transparent;
+    border: 2px solid #10b981;
+    color: #10b981;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.btn-nav:hover {
+    background: #10b981;
+    color: #020617;
+}
+
+/* Formulario */
+main {
+    padding: 60px 20px;
+    max-width: 850px;
+    margin: auto;
+}
+
+section {
+    background: #0b111e;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+h2 { 
+    color: #10b981; 
+    border-bottom: 2px solid #10b981; 
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+fieldset {
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    color: #10b981;
+    padding: 0 10px;
+    font-size: 1.1rem;
+}
+
+label { display: block; margin-top: 15px; font-weight: 600; color: #e2e8f0; }
+label.inline { display: inline; font-weight: normal; margin-left: 8px; color: #94a3b8; }
+
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+select, 
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #020617;
+    border: 1px solid #1e293b;
+    border-radius: 6px;
+    color: #f8fafc;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #10b981;
+}
+
+.check-item { margin-bottom: 8px; }
+
+.btn-submit {
+    background: #10b981;
+    color: #020617;
+    border: none;
+    padding: 18px;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 800;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.btn-submit:hover { 
+    background: #059669; 
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(16, 185, 129, 0.4);
+}
+
+/* Pie de página */
+footer {
+    background: #0b111e;
+    color: #94a3b8;
+    padding: 40px 0;
+    margin-top: 60px;
+    border-top: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+}
+
+footer a { color: #10b981; text-decoration: none; }
+footer a:hover { text-decoration: underline; }
